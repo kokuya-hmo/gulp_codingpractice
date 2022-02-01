@@ -35,11 +35,6 @@ a {
   display: block;
 }
 
-.contact_btn {
-  text-decoration: none;
-  color: unset;
-}
-
 .header-layout {
   display: flex;
   justify-content: space-between;
@@ -52,6 +47,10 @@ a {
   padding: 12px 14px;
   display: inline-block;
   margin: auto 0;
+}
+.contact-btn-txt {
+  text-decoration: none;
+  color: unset;
 }
 @media screen and (max-width: 767px) {
   .contact-btn {
@@ -164,7 +163,6 @@ a {
     padding-bottom: 50px;
   }
 }
-
 .work-container {
   display: grid;
   grid-template-columns: 4fr 6fr;
@@ -173,6 +171,16 @@ a {
   .work-container {
     display: block;
   }
+}
+.work-title {
+  margin-top: 20px;
+}
+.work-text {
+  font-size: 15px;
+  line-height: 18px;
+  word-break: break-all;
+  text-align: center;
+  margin-top: 35px;
 }
 
 .pc-image {
@@ -188,18 +196,6 @@ h2 {
   font-size: 40px;
   letter-spacing: 10px;
   text-align: center;
-}
-
-.work-title {
-  margin-top: 20px;
-}
-
-.work-text {
-  font-size: 15px;
-  line-height: 18px;
-  word-break: break-all;
-  text-align: center;
-  margin-top: 35px;
 }
 
 /*work*/
@@ -272,10 +268,6 @@ h2 {
   padding-bottom: 50px;
 }
 
-.cell-table tr:first-child {
-  background: #6ba7eb;
-}
-
 .cell-table {
   text-align: center;
   width: 1100px;
@@ -312,6 +304,9 @@ h2 {
 .cell-table th:first-child {
   border-left: none;
 }
+.cell-table tr:first-child {
+  background: #6ba7eb;
+}
 .cell-table tr {
   background: #e0efff;
 }
@@ -331,7 +326,6 @@ h2 {
     padding: 50px 15px;
   }
 }
-
 .sns_icon {
   display: flex;
   justify-content: center;

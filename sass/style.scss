@@ -44,10 +44,6 @@ header{
 a{
   display: block;
 }
-.contact_btn{
- text-decoration: none;
- color:unset;
-}
 .header-layout{
   display: flex;
   justify-content: space-between;
@@ -59,6 +55,10 @@ a{
   padding: 12px 14px;
   display: inline-block;
   margin:auto 0;
+  &-txt{
+    text-decoration: none;
+    color:unset;
+  }
   @include sp{
     text-indent: 100%;
     white-space: nowrap;
@@ -151,12 +151,22 @@ span{
   @include tab{
     padding-bottom: 50px;
   }
-}
-.work-container{
-  display: grid;
-  grid-template-columns: 4fr 6fr;
-  @include tab{
-    display: block;
+  &-container{
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    @include tab{
+      display: block;
+    }
+  }
+  &-title{
+    margin-top:20px;
+  }
+  &-text{
+    font-size: 15px;
+    line-height:18px;
+    word-break: break-all;
+    text-align: center;
+    margin-top: 35px;
   }
 }
 .pc-image{
@@ -171,16 +181,6 @@ h2{
   font-size: 40px;
   letter-spacing: 10px;
   text-align: center;
-}
-.work-title{
-  margin-top:20px;
-}
-.work-text{
-  font-size: 15px;
-  line-height:18px;
-  word-break: break-all;
-  text-align: center;
-  margin-top: 35px;
 }
 /*work*/
 /*skills*/
@@ -239,9 +239,6 @@ h2{
   background: #d0dfea;
   @include padding(50px);
 }
-.cell-table tr:first-child{
-  background: #6ba7eb;
-}
 .cell-table{
   text-align: center;
   width: 1100px;
@@ -273,6 +270,9 @@ h2{
   th:first-child{
     border-left:none;
   }
+  tr:first-child{
+    background: #6ba7eb;
+  }
   tr{
     background: #e0efff;
   }
@@ -288,29 +288,29 @@ h2{
   @include sp{
     padding:50px 15px;
   }
-}
-.sns_icon{
-  display: flex;
-  justify-content: center;
-  @include sp{
-    display:block;
-  }
-  a{
-    color:#8c8c8c;
-    overflow: hidden;
-    font-size: 40px;
-    padding: 25px 0;
-    width:185px;
-    text-align: center;
-    text-decoration: none;
-    transition: 0.5s;
+  &_icon{
+    display: flex;
+    justify-content: center;
     @include sp{
-      @include padding(50px);
-      width:100%;
+      display:block;
     }
-  }
-  a:hover{
-    background-color: #fff;
+    a{
+      color:#8c8c8c;
+      overflow: hidden;
+      font-size: 40px;
+      padding: 25px 0;
+      width:185px;
+      text-align: center;
+      text-decoration: none;
+      transition: 0.5s;
+      @include sp{
+        @include padding(50px);
+        width:100%;
+      }
+    }
+    a:hover{
+      background-color: #fff;
+    }
   }
 }
 /*nav*/
